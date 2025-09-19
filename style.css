@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+      font-size: 16px;
+      color: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Animación de entrada para el contenedor principal */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.login-container {
+    
+    margin: 200px;
+    background-color: #1b1a1a;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 2;
+    animation: fadeInScale 0.5s ease-out forwards;
+}
+
+
+
+.login-content-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 48px 48px 24px;
+    box-sizing: border-box;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-right: 48px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* En tu archivo style.css */
+.mi-logo {
+    width: 120px; /* Tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Asegura que los márgenes funcionen correctamente */
+    margin-bottom: 20px; /* Espacio debajo del logo */
+    margin-top: -150px; /* Sube el logo 80px */
+    margin-left: -30px; /* Lo mueve a la izquierda, ajusta este valor */
+}
+
+.main-title {
+    font-size: 25px;
+    font-weight: normal;
+    color:  #1b1a1a
+    
+    
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 0;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    background-color: #000000;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: 0 0 0 1px #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+}
+
+.forgot-email,
+.create-account,
+.guest-info a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.forgot-email:hover,
+.create-account:hover,
+.guest-info a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+.forgot-email {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.guest-info {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.guest-info a {
+    font-weight: normal;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.create-account {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-account:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.next-button {
+    background-color: #2e62a7;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    min-width: 80px;
+}
+
+.next-button:hover {
+    background-color: #3a68a5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+    border-top: 1px solid #dadce0;
+    font-size: 12px;
+    color: #000000;
+}
+
+.language-selector select {
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.language-selector select:hover {
+    color: #000000;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #202124;
+    text-decoration: underline;
+}
+

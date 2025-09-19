@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../ProyectPhising"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "archivoGuis"
+	}
+}
